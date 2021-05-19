@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Troop Team</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        function calculate() {
+            var data = document.getElementById("sizeData").value;
+            if (data < 42) {
+                document.getElementById("answer").innerHTML = 'your size is smaller';
+            } else {
+                document.getElementById("answer").innerHTML = 'your size is larger';
+            }
+
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <img src="images/logo.png">
+        <a href="index.html">Home</a>
+        <a href="Shop.html">Shop</a>
+        <a href="Contact.html">Contact</a>
+    </nav>
+
+    <section>
+        <ul>
+            <li>
+                <img src="images/combatVest2.png">
+                <h2>$2000</h2>
+            </li>
+            <li>
+                <img src="images/combatVest4.png">
+                <h2>$2500</h2>
+            </li>
+            <li>
+                <img src="images/Untitled-1.png">
+                <h2>$3000</h2>
+            </li>
+        </ul>
+        <h1>Size Calculator</h1>
+        <input type="number" name="size" id="sizeData">
+        <button type="submit" onclick="calculate()">Submit</button>
+        <p id="answer"></p>
+    </section>
